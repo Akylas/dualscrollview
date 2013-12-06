@@ -836,7 +836,6 @@ public class DualScrollView extends FrameLayout {
                     int initialXVelocity = (int) velocityTracker.getXVelocity(mActivePointerId);
                     int initialYVelocity = (int) velocityTracker.getYVelocity(mActivePointerId);
                     if (getChildCount() > 0) {
-                    	Log.d(TAG, "should fling " + initialXVelocity + ", " + initialYVelocity);
                        if (rangeX == 0 || Math.abs(initialXVelocity) <= mMinimumVelocity) initialXVelocity = 0;
                         if (rangeY == 0 || Math.abs(initialYVelocity) <= mMinimumVelocity) initialYVelocity = 0;
                         
